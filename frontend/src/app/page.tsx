@@ -1,7 +1,7 @@
 "use client";
 
 import { ACards, ACardsRounded } from "@/components/card";
-import { ChevronLeft, ChevronRight, House, Package, Search, Wifi } from "lucide-react";
+import { ChevronLeft, ChevronRight, Globe, House, Package, Search, Wifi } from "lucide-react";
 
 
 
@@ -33,33 +33,39 @@ export default function Home() {
         </div>
 
         {/* Modal inferior da parte esquerda */}
-        <div className="w-[420px] h-[680px] bg-zinc-900 m-2 mr-0 mt-0 flex flex-col  rounded-lg">
+        <div className="w-[420px] h-[680px] bg-zinc-900 m-2 mr-0 mt-0 flex flex-col justify-between rounded-lg">
 
-          <div className="flex gap-3 m-6">
-            <Package />
-            <a className="text-zinc-400 text-base font-semibold hover:text-zinc-100 transition-all" href="#">Sua Biblioteca</a>
+          <div className="flex flex-col ">
+            <div className="flex gap-3 m-6">
+              <Package />
+              <a className="text-zinc-400 text-base font-semibold hover:text-zinc-100 transition-all" href="#">Sua Biblioteca</a>
+            </div>
+
+            <div className="w-[400px] h-32 bg-zinc-800 rounded-lg mx-auto">
+              <h1 className="font-semibold text-sm mx-5 mt-4 mb-2">Crie sua primeira playlist</h1>
+              <p className="mx-5 text-sm font-normal">É fácil, vamos te ajudar.</p>
+              <button className="rounded-3xl px-4 py-1.5 m-5 font-bold flex bg-zinc-100 text-zinc-950 text-sm hover:scale-105">Criar playlist</button>
+            </div>
+
+            <div className="w-[400px] h-32 bg-zinc-800 rounded-lg mx-auto m-5">
+              <h1 className="font-semibold text-sm mx-5 mt-4 mb-2">Que tal seguir um podcast novo?</h1>
+              <p className="mx-5 text-sm font-normal">Avisaremos você sobre novos episódios.</p>
+              <button className="rounded-3xl px-4 py-1.5 m-5 font-bold flex bg-zinc-100 text-zinc-950 text-sm hover:scale-105 border-white">Explore podcasts</button>
+            </div>
           </div>
 
-          <div className="w-[400px] h-32 bg-zinc-800 rounded-lg mx-auto">
-            <h1 className="font-semibold text-sm mx-5 mt-4 mb-2">Crie sua primeira playlist</h1>
-            <p className="mx-5 text-sm font-normal">É fácil, vamos te ajudar.</p>
-            <button className="rounded-3xl px-4 py-1.5 m-5 font-bold flex bg-zinc-100 text-zinc-950 text-sm hover:scale-105">Criar playlist</button>
-          </div>
+          <div className="p-4 flex flex-col h-44 justify-between">
+            <div className="flex flex-wrap gap-3 font-extralight">
+              <a className="text-xs" href="#">Legal</a>
+              <a className="text-xs" href="#">Segurança e Centro de privacidade</a>
+              <a className="text-xs" href="#">Políticas de privacidade</a>
+              <a className="text-xs" href="#">Cookies</a>
+              <a className="text-xs" href="#">Sobre anúncios</a>
+              <a className="text-xs" href="#">Acessibilidade</a>
 
-          <div className="w-[400px] h-32 bg-zinc-800 rounded-lg mx-auto m-5">
-            <h1 className="font-semibold text-sm mx-5 mt-4 mb-2">Que tal seguir um podcast novo?</h1>
-            <p className="mx-5 text-sm font-normal">Avisaremos você sobre novos episódios.</p>
-            <button className="rounded-3xl px-4 py-1.5 m-5 font-bold flex bg-zinc-100 text-zinc-950 text-sm hover:scale-105 border-white">Explore podcasts</button>
-          </div>
-
-          <div className="flex flex-wrap gap-5 font-extralight">
-            <a href="#">Legal</a>
-            <a href="#">Segurança e Centro de privacidade</a>
-            <a href="#">Políticas de privacidade</a>
-            <a href="#">Cookies</a>
-            <a href="#">Sobre anúncios</a>
-            <a href="#">Acessibilidade</a>
-            <button className="block shadow-shape rounded-3xl px-5 py-1 font-semibold hover:scale-105">Português do Brasil</button>
+            </div>
+            <button className=" flex items-center gap-1 w-44 shadow-shape rounded-3xl px-3 py-1 text-xs font-semibold my-auto hover:scale-105">
+              <Globe />Português do Brasil</button>
           </div>
         </div>
       </div>
@@ -84,7 +90,7 @@ export default function Home() {
             <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
           </div>
 
-          <div className="flex mb-3 p-4">
+          <div className="flex flex-wrap mb-3 p-4">
             <ACardsRounded />
             <ACardsRounded />
             <ACardsRounded />
@@ -97,7 +103,7 @@ export default function Home() {
             <h1 className="font-extrabold text-xl ml-5 mt-5">Álbuns populares</h1>
             <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
           </div>
-          <div className="flex mb-5 p-4">
+          <div className="flex flex-wrap mb-5 p-2">
             <ACards />
             <ACards />
             <ACards />
