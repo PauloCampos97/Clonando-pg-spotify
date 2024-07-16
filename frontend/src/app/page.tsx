@@ -1,5 +1,6 @@
 "use client";
 
+import { ACards, ACardsRounded } from "@/components/card";
 import { ChevronLeft, ChevronRight, House, Package, Search, Wifi } from "lucide-react";
 
 
@@ -70,25 +71,43 @@ export default function Home() {
         {/* div das setinhas */}
         <div className="flex items-center space-x-3 h-16 bg-zinc-900 rounded-t-lg ">
           <button className="ml-5 rounded-full bg-black/40 p-1">
-            <ChevronLeft />
+            <ChevronLeft className="text-zinc-400" />
           </button>
           <button className=" rounded-full bg-black/40 p-1">
-            <ChevronRight />
+            <ChevronRight className="text-zinc-400" />
           </button>
         </div>
 
         <div>
           <div className="flex justify-between">
-            <h1 className="font-extrabold text-xl m-5">Artistas Populares</h1>
-            <a className="text-zinc-400 text-sm font-semibold m-5" href="#">Mostrar tudo</a>
+            <h1 className="font-extrabold text-xl ml-5 mt-5">Artistas populares</h1>
+            <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
           </div>
 
-          <div>
+          <div className="flex mb-3 p-4">
+            <ACardsRounded />
+            <ACardsRounded />
+            <ACardsRounded />
+            <ACardsRounded />
+            <ACardsRounded />
+            <ACardsRounded />
+          </div>
 
+          <div className="flex justify-between">
+            <h1 className="font-extrabold text-xl ml-5 mt-5">Álbuns populares</h1>
+            <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
+          </div>
+          <div className="flex mb-5 p-4">
+            <ACards />
+            <ACards />
+            <ACards />
+            <ACards />
+            <ACards />
+            <ACards />
           </div>
 
         </div>
       </div>
-    </div>
+    </div >
   );
 }
