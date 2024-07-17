@@ -90,7 +90,7 @@ export default function Home() {
             <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
           </div>
 
-          <div className="flex flex-wrap mb-3 p-4">
+          <div className="flex mb-3 p-4">
             <ACardsRounded />
             <ACardsRounded />
             <ACardsRounded />
@@ -103,7 +103,7 @@ export default function Home() {
             <h1 className="font-extrabold text-xl ml-5 mt-5">Álbuns populares</h1>
             <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
           </div>
-          <div className="flex flex-wrap mb-5 p-2">
+          <div className="flex  mb-5 p-2">
             <ACards />
             <ACards />
             <ACards />
