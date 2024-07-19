@@ -76,105 +76,108 @@ export default function Home() {
 
 
       {/* Parte direita da pagina */}
-      <div className="flex-1 rounded-lg h-[860px] overflow-y-auto bg-zinc-800 ">
-        {/* div das setinhas */}
-        <div className="flex justify-between items-center h-16 bg-zinc-900 rounded-t-lg ">
-          <div className="space-x-3">
-            <button className="ml-5 rounded-full bg-black/40 p-1">
-              <ChevronLeft className="text-zinc-400" />
-            </button>
-            <button className=" rounded-full bg-black/40 p-1">
-              <ChevronRight className="text-zinc-400" />
-            </button>
+      <div>
+        <div className="flex-1 relative rounded-lg h-[860px] bg-zinc-800 ">
+          {/* div das setinhas */}
+          <div className="flex w-full max-w-[1478px] p-5 justify-between items-center h-16 bg-zinc-900 rounded-t-lg ">
+            <div className="space-x-3">
+              <button className="ml-5 rounded-full scale-105 bg-black/40 p-1">
+                <ChevronLeft className="text-zinc-400" />
+              </button>
+              <button className=" rounded-full scale-105 bg-black/40 p-1">
+                <ChevronRight className="text-zinc-400" />
+              </button>
+            </div>
+            <div>
+              <button>Entrar</button>
+            </div>
           </div>
-          <div>
-            <button>Entrar</button>
+
+          <div className="max-h-[798px]  overflow-y-auto items-end">
+            <div className="flex justify-between">
+              <h1 className="font-extrabold text-xl ml-5 mt-5">Artistas populares</h1>
+              <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
+            </div>
+
+            <div className="flex mb-3 p-4">
+              <ACardsRounded />
+              <ACardsRounded />
+              <ACardsRounded />
+              <ACardsRounded />
+              <ACardsRounded />
+              <ACardsRounded />
+            </div>
+
+            <div className="flex justify-between">
+              <h1 className="font-extrabold text-xl ml-5 mt-5">Álbuns populares</h1>
+              <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
+            </div>
+            <div className="flex  mb-5 p-2">
+              <ACards />
+              <ACards />
+              <ACards />
+              <ACards />
+              <ACards />
+              <ACards />
+            </div>
+
+            <div className="flex justify-between">
+              <h1 className="font-extrabold text-xl ml-5 mt-5">Estações de rádio populares</h1>
+              <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
+            </div>
+            <div className="flex  mb-5 p-2">
+              <ACards />
+              <ACards />
+              <ACards />
+              <ACards />
+              <ACards />
+              <ACards />
+            </div>
+
+            <div className="flex justify-between">
+              <h1 className="font-extrabold text-xl ml-5 mt-5">Paradas em destaque</h1>
+              <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
+            </div>
+            <div className="flex  mb-5 p-2">
+              <ACards />
+              <ACards />
+              <ACards />
+              <ACards />
+              <ACards />
+              <ACards />
+            </div>
+
+            <div className="flex justify-between">
+              <h1 className="font-extrabold text-xl ml-5 mt-5">Playlists do Spotify</h1>
+              <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
+            </div>
+            <div className="flex  mb-5 p-2">
+              <ACards />
+              <ACards />
+              <ACards />
+              <ACards />
+              <ACards />
+              <ACards />
+            </div>
+
+            <div className="flex justify-between">
+              <h1 className="font-extrabold text-xl ml-5 mt-5">Epsódios em alta</h1>
+              <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
+            </div>
+            <div className="flex  mb-5 p-2">
+              <ACards />
+              <ACards />
+              <ACards />
+              <ACards />
+              <ACards />
+              <ACards />
+            </div>
+
           </div>
         </div>
 
-        <div>
-          <div className="flex justify-between">
-            <h1 className="font-extrabold text-xl ml-5 mt-5">Artistas populares</h1>
-            <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
-          </div>
-
-          <div className="flex mb-3 p-4">
-            <ACardsRounded />
-            <ACardsRounded />
-            <ACardsRounded />
-            <ACardsRounded />
-            <ACardsRounded />
-            <ACardsRounded />
-          </div>
-
-          <div className="flex justify-between">
-            <h1 className="font-extrabold text-xl ml-5 mt-5">Álbuns populares</h1>
-            <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
-          </div>
-          <div className="flex  mb-5 p-2">
-            <ACards />
-            <ACards />
-            <ACards />
-            <ACards />
-            <ACards />
-            <ACards />
-          </div>
-
-          <div className="flex justify-between">
-            <h1 className="font-extrabold text-xl ml-5 mt-5">Estações de rádio populares</h1>
-            <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
-          </div>
-          <div className="flex  mb-5 p-2">
-            <ACards />
-            <ACards />
-            <ACards />
-            <ACards />
-            <ACards />
-            <ACards />
-          </div>
-
-          <div className="flex justify-between">
-            <h1 className="font-extrabold text-xl ml-5 mt-5">Paradas em destaque</h1>
-            <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
-          </div>
-          <div className="flex  mb-5 p-2">
-            <ACards />
-            <ACards />
-            <ACards />
-            <ACards />
-            <ACards />
-            <ACards />
-          </div>
-
-          <div className="flex justify-between">
-            <h1 className="font-extrabold text-xl ml-5 mt-5">Playlists do Spotify</h1>
-            <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
-          </div>
-          <div className="flex  mb-5 p-2">
-            <ACards />
-            <ACards />
-            <ACards />
-            <ACards />
-            <ACards />
-            <ACards />
-          </div>
-
-          <div className="flex justify-between">
-            <h1 className="font-extrabold text-xl ml-5 mt-5">Epsódios em alta</h1>
-            <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
-          </div>
-          <div className="flex  mb-5 p-2">
-            <ACards />
-            <ACards />
-            <ACards />
-            <ACards />
-            <ACards />
-            <ACards />
-          </div>
-
-        </div>
       </div>
-      <div className=" bottom-2 fixed bg-slate-400 w-full h-[70px]  "></div>
+      <div className=" bottom-2 fixed bg-slate-400 w-full max-w-[1904px] h-[70px]  "></div>
     </div >
   );
 }
