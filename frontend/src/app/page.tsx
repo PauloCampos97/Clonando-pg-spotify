@@ -9,15 +9,15 @@ export default function Home() {
 
 
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-2 m-2">
 
       {/*Div da parte esquerda da página */}
       <div className="flex flex-col">
-        <div className="w-[420px] h-[850px] m-2 mr-0"></div>
+        <div className="w-[410px] h-[850px] mr-2"></div>
         <div className="fixed">
 
           {/* Modal superior da parte esquerda  */}
-          <div className="w-[420px] h-40 bg-zinc-900 m-2 mr-0 p-6 flex flex-col justify-between rounded-lg">
+          <div className="w-[420px] h-40 bg-zinc-900 p-6 flex flex-col justify-between rounded-lg">
             <div className="flex">
               <Wifi />
               <a href="#">Spotify</a>
@@ -35,7 +35,7 @@ export default function Home() {
           </div>
 
           {/* Modal inferior da parte esquerda */}
-          <div className="w-[420px] h-[680px] bg-zinc-900 m-2 mr-0 mt-5 flex flex-col justify-between rounded-lg">
+          <div className="w-[420px] h-[690px] bg-zinc-900 mt-2 flex flex-col justify-between rounded-lg">
 
             <div className="flex flex-col ">
               <div className="flex gap-3 m-6">
@@ -76,15 +76,20 @@ export default function Home() {
 
 
       {/* Parte direita da pagina */}
-      <div className="flex-1 rounded-lg bg-zinc-800 m-2 ml-0">
+      <div className="flex-1 rounded-lg h-[860px] overflow-y-auto bg-zinc-800 ">
         {/* div das setinhas */}
-        <div className="flex items-center space-x-3 h-16 bg-zinc-900 rounded-t-lg ">
-          <button className="ml-5 rounded-full bg-black/40 p-1">
-            <ChevronLeft className="text-zinc-400" />
-          </button>
-          <button className=" rounded-full bg-black/40 p-1">
-            <ChevronRight className="text-zinc-400" />
-          </button>
+        <div className="flex justify-between items-center h-16 bg-zinc-900 rounded-t-lg ">
+          <div className="space-x-3">
+            <button className="ml-5 rounded-full bg-black/40 p-1">
+              <ChevronLeft className="text-zinc-400" />
+            </button>
+            <button className=" rounded-full bg-black/40 p-1">
+              <ChevronRight className="text-zinc-400" />
+            </button>
+          </div>
+          <div>
+            <button>Entrar</button>
+          </div>
         </div>
 
         <div>
@@ -169,7 +174,7 @@ export default function Home() {
 
         </div>
       </div>
-
+      <div className=" bottom-2 fixed bg-slate-400 w-full h-[70px]  "></div>
     </div >
   );
 }
