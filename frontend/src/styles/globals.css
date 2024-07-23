@@ -3,6 +3,23 @@
 @tailwind utilities;
 
 
+::-webkit-scrollbar {
+  width: 12px;
+  border: 2px solid #a5393900;
+
+}
+
+ ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+ ::-webkit-scrollbar-thumb {
+  width: 5px;
+  background: #f2f2f282;
+  background: #f2f2f28f;
+
+}
+
 
   input {
     color-scheme:dark;

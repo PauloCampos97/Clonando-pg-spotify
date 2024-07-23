@@ -77,23 +77,24 @@ export default function Home() {
 
       {/* Parte direita da pagina */}
       <div>
-        <div className="flex-1 relative rounded-lg h-[860px] bg-zinc-800 ">
+        <div className="flex-1 relative rounded-lg h-[860px] bg-zinc-800 overflow-y-auto">
           {/* div das setinhas */}
-          <div className="flex w-full max-w-[1478px] p-5 justify-between items-center h-16 bg-zinc-900 rounded-t-lg ">
+          <div className="flex w-full max-w-[1478px] p-6 justify-between items-center h-16 bg-zinc-900 rounded-t-lg ">
             <div className="space-x-3">
-              <button className="ml-5 rounded-full scale-105 bg-black/40 p-1">
+              <button className=" rounded-full scale-105 bg-black/40 p-1">
                 <ChevronLeft className="text-zinc-400" />
               </button>
               <button className=" rounded-full scale-105 bg-black/40 p-1">
                 <ChevronRight className="text-zinc-400" />
               </button>
             </div>
-            <div>
-              <button>Entrar</button>
+            <div className="">
+              <button className="text-zinc-400 mx-8 font-semibold">Inscrever-se</button>
+              <button className="bg-white text-zinc-950 rounded-3xl py-3 px-7 font-semibold mr-2">Entrar</button>
             </div>
           </div>
 
-          <div className="max-h-[798px]  overflow-y-auto items-end">
+          <div className="max-h-[798px]   items-end">
             <div className="flex justify-between">
               <h1 className="font-extrabold text-xl ml-5 mt-5">Artistas populares</h1>
               <a className="text-zinc-400 text-sm font-semibold mr-5 mt-5" href="#">Mostrar tudo</a>
@@ -177,7 +178,15 @@ export default function Home() {
         </div>
 
       </div>
-      <div className=" bottom-2 fixed bg-slate-400 w-full max-w-[1904px] h-[70px]  "></div>
+      <div className="flex justify-between bottom-2 fixed bg-blue-500 w-full max-w-[1904px] h-[70px]  ">
+        <div className="mx-4 my-4">
+          <h3 className="text-xs font-bold">Testar o Premium de graça</h3>
+          <p className="text-sm mt-1">Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartrão de crédito.</p>
+        </div>
+        <div className="mx-6 my-auto">
+          <button className="bg-white flex px-6 py-3 rounded-full text-zinc-950 font-semibold">Inscreva-se grátis</button>
+        </div>
+      </div>
     </div >
   );
 }
